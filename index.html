@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>设备登录说明</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Microsoft YaHei', sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(90deg, #3498db, #2c3e50);
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .warning {
+            background-color: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 15px;
+            margin: 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #856404;
+        }
+        .content {
+            padding: 25px;
+        }
+        .step {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #e0e0e0;
+        }
+        .step:last-child {
+            border-bottom: none;
+        }
+        .step-number {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-color: #3498db;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        .step-title {
+            font-size: 18px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .step-content {
+            margin-left: 40px;
+            color: #34495e;
+            line-height: 1.6;
+        }
+        .link-container {
+            text-align: center;
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            border: 2px dashed #3498db;
+        }
+        .link-button {
+            display: inline-block;
+            background: linear-gradient(90deg, #3498db, #2c3e50);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+        }
+        .link-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(52, 152, 219, 0.6);
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #7f8c8d;
+            font-size: 14px;
+            border-top: 1px solid #f1f1f1;
+        }
+        .important {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        code {
+            background-color: #f8f9fa;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>设备登录说明</h1>
+            <p>请仔细阅读以下登录步骤</p>
+        </div>
+        
+        <div class="warning">
+            <strong>重要提示：</strong> 此账号<span class="important">只能登录1个设备</span>固定使用！首次登录的设备将被绑定，多设备登录将无法获得售后服务！
+        </div>
+        
+        <div class="content">
+            <div class="step">
+                <span class="step-number">1</span>
+                <span class="step-title">复制卡号</span>
+                <div class="step-content">
+                    <p>复制发给你的卡号后面的号码，然后打开腾讯视频，点击登录，选择手机号登录。</p>
+                </div>
+            </div>
+            
+            <div class="step">
+                <span class="step-number">2</span>
+                <span class="step-title">更改区号并获取验证码</span>
+                <div class="step-content">
+                    <p>把前面的+86换成美国+1，然后输入您复制的号码，点击获取验证码。</p>
+                </div>
+            </div>
+            
+            <div class="step">
+                <span class="step-number">3</span>
+                <span class="step-title">打开链接获取验证码</span>
+                <div class="step-content">
+                    <p>复制下面的链接用浏览器打开。记得刷新一下网站，第二排会自动出现验证码。</p>
+                    <p><em>可能出现的问题：如果没有出现验证码就多刷新几次或者重新获取一次。</em></p>
+                </div>
+            </div>
+            
+            <div class="link-container">
+                <a href="instructions.txt" class="link-button">点击打开说明文件</a>
+                <p style="margin-top: 15px; font-size: 14px;">点击上方按钮查看详细说明文件</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>© 2023 账号服务中心 | 使用过程中如有问题请联系客服</p>
+        </div>
+    </div>
+</body>
+</html>
